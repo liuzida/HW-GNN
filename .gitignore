@@ -1,0 +1,65 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+.claude/
+
+# Training outputs and historical experiment logs
+logs/
+*.log
+*.out
+launch_output.txt
+experiment_launcher.log
+all_experiments.log
+
+# Large data, generated graph caches, and model artifacts
+dataset/*
+!dataset/.gitkeep
+pretrained/*
+!pretrained/.gitkeep
+mlp_model/*
+!mlp_model/.gitkeep
+raw.zip
+*.zip
+*.zip.*
+Twibot-20_pretrained_embedding.pt
+*.pt
+*.pth
+*.pkl
+result_20/
+
+# Ad hoc experiment scripts
+check_*.py
+monitor.sh
+run_after_nograd_stable.sh
+run_all.sh
+run_experiments.sh
+run_failed_*.sh
+run_gap_*.sh
+run_mgtab_*.sh
+run_missing_ppr.sh
+run_postfix_optimization.sh
+run_stable_reruns.sh
+run_underperforming_optimization.sh
+
+# Benchmark workflows
+!run_mgtab_ensemble_optimization.sh
+
+# Local documents and notes
+main.tex
+launch_output.txt
+task_plan.md
+findings.md
+progress.md
+
+# Local environment and editor files
+.env
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+*.swp
+*.swo
